@@ -1,0 +1,173 @@
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    margin-top: 50px;
+    height: fit-content;
+    padding: 0 20px; 
+}
+
+h1 {
+    color: #c0392b;
+    margin-bottom: 20px;
+}
+
+#marvel_logo {
+    height: 8rem;
+    margin-bottom: 20px;
+}
+#marvel_logo2 {
+    height: 3rem;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#buscador {
+    width: 60%; 
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #c0392b;
+    background-color: #f9e79f;
+    color: black;
+    border-radius: 8px;
+}
+
+#btnBuscar {
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+#btnBuscar:hover {
+    background-color: #a93226;
+}
+
+
+#resultado {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    margin-bottom: 200px;
+}
+
+#resultado img {
+    height: 10rem;
+    border-radius: 10px;
+}
+
+#resultado .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+#resultado h2 {
+    color: #c0392b;
+    margin: 0;
+}
+
+#resultado p {
+    font-size: 16px;
+    color: #333;
+    margin: 8px 0;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: black;
+    color: #b2b2b4;
+    padding: 60px 20px;
+    margin-top: 40px;
+}
+
+footer h2 {
+    color: white;
+    padding-bottom: 5px;
+}
+
+footer p {
+    color: #b2b2b4;
+    text-decoration: none;
+    margin: 10px;
+    padding-bottom: 2px;
+}
+
+footer a {
+    color: #b2b2b4;
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+
+@media (max-width: 768px) {
+    #buscador {
+        width: 80%; 
+    }
+
+    #marvel_logo {
+        height: 6rem;
+    }
+
+    #btnBuscar {
+        width: 100%; 
+        margin-top: 10px; 
+        margin-left: 0;
+    }
+
+    .container {
+        margin-top: 20px; 
+    }
+
+    #resultado {
+        max-width: 90%; 
+        padding: 15px;
+    }
+
+    footer {
+        padding: 40px 15px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    #buscador {
+        width: 90%; 
+    }
+
+    #btnBuscar{
+        width: 40%;
+    }
+
+    h1{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+
+    #marvel_logo {
+        height: 4rem; 
+    }
+
+    footer p, footer a {
+        font-size: 14px; 
+    }
+}
