@@ -19,7 +19,10 @@ function buscarPersonaje(nombre) {
     fetch(url)
     .then(response => response.json())
     .then(data => mostrarResultado(data))
-    .catch(error => console.error('Error:', error));
+    .catch(error => {
+        console.error('Error:', error);
+        resultadoDiv.innerHTML = '<p>Ocurrió un error al buscar el personaje. Por favor, inténtalo de nuevo más tarde.</p>';
+    });
 }
 
 function mostrarResultado(data) {
